@@ -1,0 +1,55 @@
+node_modules = it stores npm packages require for the entire work place.
+src folder= it contains src level files require for your application.
+editorconfig= specifiy the configation for the folder.
+gitignore =use to ignore sum files during pushing into github i.e.large files
+angular.json = use to implement the cli modules.
+.browserlist = its use to share the version of angular.js to various browser.  
+karma.conf.js = Karma is a test runner for JavaScript that runs on Node. js. 
+                It is very well suited to testing AngularJS or any other JavaScript
+                projects.Using Karma to run tests using one of many popular JavaScript 
+                testing suites (Jasmine, Mocha, QUnit, etc.)
+package-lock.json = it get all information about versions of packges downlod by nodejs
+package.json = npm package dependencies. 
+tsconfig.app.json = typesript configuration
+typesript.json = default typescrpit configuration.
+
+
+???
+
+BASICALY WORK IS ONLY DONE ON THE  "src folder"
+
+1) app------------logic and data 
+2) assets  ------ It contains all the images files
+3) envirnoments---target envirnoments.
+4) favicon.ico ---A favicon is a small 16×16 pixel icon that serves as branding for
+                your website. Its main purpose is to help visitors locate your page easier when they
+                have multiple tabs open.
+5)index.html------main html file for the application
+6)main.ts---------entry point of the application
+7)polyfills.ts----this files provides browser support script.
+8)style.css-------all css files that require for the application.
+9)test.ts----------all require ts modules are present dont need the any anything in this file.
+
+&&&&&&&&&&&&&&&&&&&
+
+IMPORTANT files
+1) all app files are IMPORTANT for root app development. 
+
+
+{{{{{{{{{{{{{{{
+    steps
+    1) runs app.module file :- angular checks the app module that present in 
+                            {appmodule} ./app/appmodule
+    2) moves to app.module.ts :- it contains all the componets that require to run 
+                                app file. the re componets are add in componets array
+                                which is ngmodule decorater.
+    3) moves towards the app.componets.ts :- it handles the all url related to app componets
+                                            that is app.componet.css & app.componet.html 
+
+    
+
+
+
+
+
+}}}}}}}}}}}}}}}

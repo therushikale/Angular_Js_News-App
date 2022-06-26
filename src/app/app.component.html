@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+  <!-- Responsive Navbar -->
+  <mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)= "sidenav.toggle()">
+         <mat-icon *ngIf="!sidenav.opened">
+           menu
+         </mat-icon>
+         <mat-icon *ngIf="sidenav.opened">
+           close
+          </mat-icon>
+          <span>TRUSt NEWS</span>    </button>
+        </mat-toolbar>
+          <mat-sidenav-container>
+          <mat-sidenav #sidenav='matSidenav'>
+              <button mat-button class="menu-button" onclick="window.location.href='#news'">
+                <mat-icon>home</mat-icon>
+                <span>HOME</span>
+              </button>
+         <mat-divider></mat-divider>
+         <button mat-button class="menu-button" onclick="window.location.href='#news'">
+           <mat-icon>stars</mat-icon>
+           <span>NEWS</span>
+         </button>
+         <mat-divider></mat-divider>
+         <button mat-button class="menu-button" onclick="window.location.href='#sports'">
+           <mat-icon>sports</mat-icon>
+           <span>SPORTS</span>
+         </button>
+         <mat-divider></mat-divider>
+         <button mat-button class="menu-button" onclick="window.location.href='https://www.sciencenews.org/'">
+          <mat-icon>science</mat-icon >
+          <span>SCIENCE</span>
+        </button>
+         <mat-divider></mat-divider>
+         <button mat-button class="menu-button" onclick="window.location.href='#fashion'">
+           <mat-icon>shop</mat-icon>
+           <span>FASHION</span>
+         </button>
+         <mat-divider></mat-divider>
+         <button mat-button class="menu-button" onclick="window.location.href='https://www.webmd.com/news/articles'">
+          <mat-icon>local_hospital</mat-icon>
+          <span>HEALTH</span>
+        </button>
+     </mat-sidenav>
+     <mat-sidenav-content>
+<!-- Navbar -1  -->
+<section class="top_head">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="mobi_center">
+            <ul class="headers">
+              <li><a href="https://edition.cnn.com/world"><h6><b>World</b></h6></a></li>
+              <li><a href="#"><h6><b></b></h6> </a></li>
+              <li><a href="https://www.bbc.com/travel"><h6><b>Travel</b></h6></a></li>
+              <li><a href="#"><h6><b></b></h6></a></li>
+              <li><a href="#"><h6><b>contact</b></h6></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="text-right realtives gapping">
+            <input type="text" class="accounts" placeholder="Search News Here">
+            <button class="buttons prev">SEARCH</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Navbar -2  -->
+  <section class="mid_head">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mobi_center">
+          <h1>TRUSt NEWS</h1>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mobi_center mobi_none">
+          <img src="https://placeimg.com/750/60/arch/sepia" class="responde_ad" title="ad space">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Navbar -3  -->
+  <nav>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="desk-none mob-block">
+                      <div class="nav-icn">
+                          <i class="fa fa-bars"></i> Navigation
+                      </div>
+                  </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                          <li><a href="#news">NEWS</a></li>
+                          <li><a href="#economy">ECONOMY</a></li>
+                          <li><a href="#sports">SPORTS</a></li>
+                          <li><a href="#shows">SHOWS</a></li>
+                          <li><a href="https://timesofindia.indiatimes.com/topic/architecture/news">CULTURE</a></li>
+                          <li><a href="#fashion">FASHION</a></li>
+                          <li><a href="https://www.webmd.com/news/articles">HEALTH</a></li>
+                          <li><a href="https://www.bbc.com/news/technology">TECHNOLOGY</a></li>
+                          <li><a href="https://www.sciencenews.org/">SCIENCE</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Social Media -->
+  <section class="main_cont">
+    <div class="container">
+      <div class="row mobi_flex">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 flx_order">
+          <div class="social_nav">
+            <span class="titles">SOCIALIZE</span>
+            <ul>
+              <li><a href="https://twitter.com/Rushike37174586" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/rushikesh-kale-3604b7214/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/rushi.kale__136/"   target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/therushikale" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div class="tab_bg">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="# " aria-controls="POPULAR" role="tab" data-toggle="tab">TRENDING</a></li>
+              <li role="presentation"><a href="#RECENT" aria-controls="RECENT" role="tab" data-toggle="tab">RECENT</a></li>
+            </ul><br>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="POPULAR">
+                <div *ngFor="let popular of Popular" > 
+                <div class="tabs_lines">
+                  <a href="{{popular.url}}">
+                    <ul >
+                      <li><img src="{{popular.urlToImage}}"><span>{{popular.id}}</span></li>
+                      <li>{{popular.title}}</li>
+                    </ul>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live channels -->
+          <div class="vide_day">
+            <h3 class="page_title">NDTV 24x7 live</h3>
+            <span class="vid_hol">
+             <a href="https://www.youtube.com/watch?v=WB-y7_ymPJ4"target="_blank"><img src="assets/ndtv.png">
+              <i class="play_btn fa fa-youtube-play"></i>
+              </a>
+            </span>
+          </div>
+          <div class="vide_day">
+            <h3 class="page_title">IndiaTv 24x7 live</h3>
+            <span class="vid_hol">
+             <a href="https://www.youtube.com/watch?v=lyeyoqwXm5o"target="_blank"><img src="assets/indiatv.jpg">
+              <i class="play_btn fa fa-youtube-play"></i>
+              </a>
+            </span>
+          </div>
+          <div class="vide_day">
+            <h3 class="page_title"><b>Animal Planet</b></h3>
+            <span class="vid_hol">
+             <a href="https://www.youtube.com/watch?v=BO9D4sJl1f8"target="_blank"><img src="https://placeimg.com/263/158/animals/sepia">
+              <i class="play_btn fa fa-youtube-play"></i>
+              </a>
+            </span>
+          </div>
+
+          <!-- Trending Section -->
+          <div class="vide_day">
+            <h3 class="page_title">Trending Section</h3>
+            <div *ngFor="let fashion of Fashion">
+
+            <ul class="flickr_galry">
+              <li>
+                <a href="{{fashion.url}}">
+                  <img src="{{fashion.urlToImage}}">
+                  <span class="red_over_bg">&nbsp;</span>
+                  <p>{{fashion.title}}</p>
+                </a>
+              </li>
+            </ul>
+          </div><hr>
+
+          <!-- Digital Market -->
+
+            <h3 class="page_title" id="economy">Digital Market</h3>
+            <div *ngFor="let fashion1 of Fashion1">
+              <ul class="flickr_galry">
+                <li>
+                  <a href="{{fashion1.url}}">
+                    <img src="{{fashion1.urlToImage}}">
+                    <span class="red_over_bg">&nbsp;</span>
+                    <p>{{fashion1.title}}</p>
+                  </a>
+                </li>
+              </ul></div>
+          </div>
+        </div>
+        <!-- Section -1  -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 flx_order">
+          <div class="tick_bg">
+            <span class="titles tic">DEVELOPE</span>  
+            <span ng-app="myApp" ng-controller="datCtrl" class="tims">{{ today | date:"h.mm"}}</span>
+            <a href="https://www.bbc.com/"><span class="txt">PTI Photo Five Industrial Training Institutes
+              (ITIs) developed as technology hubs a</span></a>
+          </div>
+          <div *ngFor="let main of Main">
+            <div class="slider_img">
+            <a href="{{main.url}}"><img src="{{main.urlToImage}}"></a>
+            <span class="abus_cont">
+              <ul>
+                <li>{{ today | date:"h.mm"}} </li>
+            <li>{{main.author}}   </li>
+              </ul>
+              <a href=""><strong class="sm_con">{{main.title}}</strong></a>
+            </span>
+          </div>
+        </div>
+        
+        <!-- News Section -->
+          <div class="news_holder">
+            <h3 class="page_title" id="news">NEWS<span class="news_arrow"><i class="fa fa-caret-left"></i> <i class="fa fa-caret-right"></i></span></h3>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padd_right_none">
+                <span class="realtives full">
+                  <a href="https://www.bloomberg.com/crypto"><img src="https://placeimg.com/263/158/tech/grayscale"></a>
+                  <span class="icon_bot">22</span>
+                </span>
+                <div class="news_cont">
+                  <a href="https://www.bloomberg.com/crypto">TDS On Crypto Assets From July 1: Income Tax Dept Issues Guidelines; Know Rules Here ..</a>
+                  <span>Finance Minister Nirmala Sitharaman in the Union Budget 2022 introduced the provision of tax deducted at source at 1 per cent 
+                    levied on payments made on transfer of virtual assets.</span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padd_left_none">
+                <span class="realtives full">
+                  <a href="https://timesofindia.indiatimes.com/"><img src="https://placeimg.com/263/158/nature/sepia"></a>
+                  <span class="icon_bot">15</span>
+                </span>
+                <div class="news_cont">
+                  <a href="https://timesofindia.indiatimes.com/">Maharashtra: Brace for heavy rain in Pune ghats, Konkan for  ..</a>
+                  <span>PUNE: The India Meteorological Department (IMD)on Tuesday forecast very heavy rain for isolated parts of Konkan for the next five days and heavy showers in ghat areas of Pune, Kolhapur and Satara till June.</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padd_right_none">
+                <span class="realtives full">
+                  <a href="https://timesofindia.indiatimes.com/topic/architecture/news"><img src="https://placeimg.com/263/158/arch/grayscale"></a>
+                  <span class="icon_bot">37</span>
+                </span>
+                <div class="news_cont">
+                  <a href="https://timesofindia.indiatimes.com/topic/architecture/news">NATA 2022 Result: Council of architecture likely to release NATA result today, know how to check</a>
+                  <span>National Aptitude Test in architecture, NATA result 2022 is expected to be declared today. According to the schedule released by the Council of architecture (COA), the NATA 2022 result is likely to be released on June 20.....</span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padd_left_none">
+                <span class="realtives full">
+                  <a href="https://www.bbcearth.com/"><img src="https://placeimg.com/263/158/animals/grayscale"></a>
+                  <span class="icon_bot">35
+                  </span>
+                </span>
+                <div class="news_cont">
+                  <a href="https://www.bbcearth.com/">Amazing animal survival stories -BBC Earth</a>
+                  <span>Occasionally it takes a little bit of help from us to get them going, but once they are established back in the wild, animals thrive! Here we take a look at four species, once abundant in the UK, now making a comeback after a long absence.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- REVIEWS -->
+        <div class="news_holder">
+            <h3 class="page_title">REVIEWS</h3>
+          <div *ngFor="let news1 of News1">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <div class="review_img_holder">
+                  <span class="realtives full">
+                    <a href="{{news1.url}}"><img src="{{news1.urlToImage}}"></a>
+                    <span class="icon_bot">{{news1.id}}</span>
+                  </span>
+                </div>
+                <div class="review_script">
+                  <ul>
+                    <li>Special Effects <span class="review_span">4.1</span></li>
+                    <li>Story Line <span class="review_span">4.2</span></li>
+                    <li>Casting <span class="review_span">4.4</span></li>
+                    <li class="review_act">Overall Score <span class="review_span">4.3</span></li>
+                  </ul>
+                </div>
+                <div class="review_post">
+                  <a href="{{news1.url}}">{{news1.title}}</a>
+                  <p>{{news1.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Top News -->
+        
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 flx_order">
+          <div class="serch realtives">
+            <input name="" type="text" placeholder="Search Here" class="srch_fild">
+            <button class="srch_btn"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="tab_bg">
+            <h4 class="page_title" id="">TOP NEWS</h4>
+            <div *ngFor="let news of News">
+              <div class="right_section row">
+                <a href="javascript:void(0)" class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <div class="realtives">
+                  <a href="{{news.url}}"><img src="{{news.urlToImage}}" class="fullyImg"></a>
+                  <span class="icon_bot "><i class="fa fa-star"></i></span>
+                </div>
+                <span>{{news.publishedAt}}</span>
+                <a href="{{news.url}}"><p>{{news.title}}</p></a>
+                </a> 
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sports -->
+          <div class="tab_bg realtives interview">
+            <div *ngFor="let user of Users">
+            <h4 class="page_title" id="sports">SPORTS</h4>
+            <div class="tab_bg realtives interview">
+             <a href="{{user.url}}"><img src="{{user.urlToImage}} "></a>
+             <div class="abus_inter">
+               <a href="{{user.url}}"><h5>{{user.author}}</h5></a>
+               <a href="{{user.url}}"><p>{{user.title}}</p></a>
+             </div>
+           </div> 
+           </div>
+          </div>
+          
+          <!-- Tv Shows -->
+          <div class="tab_bg">
+            <h4 class="page_title" id="fashion">TV SHOWS</h4>
+            <div *ngFor="let fashion2 of Fashion2">
+
+            <div class="right_section row">
+              <a href="javascript:void(0)" class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <div class="realtives">
+                  <a href="{{fashion2.url}}" target="_blank"><img src="{{fashion2.urlToImage}}" class="fullyImg" ></a>
+                  <span class="icon_bot "><i class="fa fa-star"></i></span>
+                </div>
+                <span>{{fashion2.publishedAt}}</span>
+                <a href="{{fashion2.url}}"><p>{{fashion2.title}}</p></a>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+          
+        <!-- TAGS -->
+
+          <div class="tab_bg">
+            <h4 class="page_title">TAGS</h4>
+            <ul class="tags_pag">
+              <li><a href="https://www.bbc.com/news">BBC</a></li>
+              <li><a href="https://edition.cnn.com/">CNN</a></li>
+              <li><a href="#sports">Sports </a></li>
+              <li><a href="#fashion">Fashion</a></li>
+              <li><a href="https://economictimes.indiatimes.com/topic/future  ">Future</a></li>
+              <li><a href="https://www.sciencenews.org/">Science</a></li>
+              <li><a href="https://www.webmd.com/news/articles">Health </a></li>
+              <li><a href="https://indianexpress.com/section/education/">Education</a></li>
+              <li><a href="https://www.ndtv.com/india">India</a></li>
+              <li><a href="https://timesofindia.indiatimes.com/topic/architecture/news">Culture</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="https://www.bbc.com/news/technology">Technology</a></li>
+              <li><a href="#shows">Shows</a></li>
+              <li><a href="https://www.bbc.com/news/stories">Story</a></li>
+              <li><a href="https://www.defensenews.com/">Defence</a></li>
+              <li><a href="https://www.independent.co.uk/topic/people-magazine">people</a></li>
+              <li><a href="#news">News</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <div class="modal-shade"></div>
+  
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('datCtrl', function($scope) {
+        $scope.today = new Date();
+    });
+
+      $(".nav-icn").on("click", function () {
+    $(".navigation").addClass("navigation-show");
+    $(".modal-shade").addClass("modal-shade-show");
+  });
+  $(".modal-shade").on("click", function () {
+    $(".navigation").removeClass("navigation-show");
+    $(".modal-shade").removeClass("modal-shade-show");
+  });
+    </script>
+
+    <footer class="footer" id="resources">
+      <div class="container">
+        <div class="logo">
+          <a href="#news">
+            <h1 style="color: white;">TRUSt NEWS</h1>
+          </a>
+        </div>
+        <div class="quick-links">
+          <div class="links-group">
+            <span>Reference</span>
+            <div>
+              <a href="https://www.bbc.com/">BBC NEWS</a>
+              <a href="https://www.indiatv.in/livetv">INDIA TV</a>
+              <a href="https://edition.cnn.com/">CNN</a>
+            </div>
+          </div>
+          <div class="links-group">
+            <span>Resources</span>
+            <div>
+              <a href="#">Technical Assistance</a>
+              <a href="#">Developers</a>
+              <a href="#">Support</a>
+            </div>
+          </div>
+          <div class="links-group">
+            <span>Community</span>
+            <div>
+              <a href="#">About</a>
+              <a href="#">Our Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center social-buttons">
+          <a href="https://www.linkedin.com/in/rushikesh-kale-3604b7214/" target="_blank" class="btn btn-default btn-lg social-button link-linkedin"><i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/rushi.kale__136/"   target="_blank"  class="btn btn-default btn-lg social-button link-instagram"><i class="fa fa-instagram"></i>
+          </a>
+            <a href="https://github.com/therushikale" target="_blank" class="btn btn-default btn-lg social-button link-github"><i class="fa fa-github"></i>
+            </a>
+            <a href="https://twitter.com/Rushike37174586" target="_blank" class="btn btn-default btn-lg social-button link-twitter"><i class="fa fa-twitter"></i>
+            </a>
+          </div>  
+      </div>
+      <br> 
+  </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</body>
+</html>
+
+  

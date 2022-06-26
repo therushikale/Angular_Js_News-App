@@ -73,7 +73,7 @@ nav{
 display: none;
 }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     mat-toolbar{
         display: inline-flex;
         }  
@@ -85,3 +85,21 @@ nav{
 display: none;
 }
 }
+@media (min-width: 761px) and (max-width: 1000px){
+    .abus_inter h5{
+       display: none;
+
+    }
+    .abus_inter p {
+        display: none;
+      }
+      .vide_day i {
+        display: none;
+      }
+      .serch button{
+        display: none;
+
+      }
+
+
+    }
